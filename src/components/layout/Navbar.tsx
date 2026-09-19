@@ -13,19 +13,15 @@ export function Navbar() {
             </Link>
           </div>
           <div className="flex items-center gap-4">
-            <nav className="flex items-center gap-4 text-sm font-medium">
-              <Link
-                href="#about"
-                className="transition-colors hover:text-foreground/80 text-foreground/60"
-              >
-                About
-              </Link>
-              <Link
-                href="#projects"
-                className="transition-colors hover:text-foreground/80 text-foreground/60"
-              >
-                Projects
-              </Link>
+            <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
+              <Link href="#about" className="transition-colors hover:text-foreground/80 text-foreground/60">About</Link>
+              <Link href="#education" className="transition-colors hover:text-foreground/80 text-foreground/60">Education</Link>
+              <Link href="#experience" className="transition-colors hover:text-foreground/80 text-foreground/60">Experience</Link>
+              <Link href="#projects" className="transition-colors hover:text-foreground/80 text-foreground/60">Projects</Link>
+              <Link href="#achievements" className="transition-colors hover:text-foreground/80 text-foreground/60">Achievements</Link>
+              <Link href="#certifications" className="transition-colors hover:text-foreground/80 text-foreground/60">Certifications</Link>
+              <Link href="#skills" className="transition-colors hover:text-foreground/80 text-foreground/60">Skills</Link>
+              <Link href="#contact" className="transition-colors hover:text-foreground/80 text-foreground/60">Contact</Link>
             </nav>
             <ThemeToggle />
           </div>
