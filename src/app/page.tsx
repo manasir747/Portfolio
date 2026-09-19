@@ -221,7 +221,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col gap-3">
                   <Link href="#" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
                     <GithubIcon className="w-4 h-4 mr-2" />
                     GitHub
@@ -254,7 +254,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col gap-3">
                   <Link href="#" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
                     <GithubIcon className="w-4 h-4 mr-2" />
                     GitHub
