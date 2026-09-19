@@ -8,3 +8,12 @@ Feel free to connect with me!
 - **LinkedIn**: [Mohammed Abu Nasir](https://linkedin.com)
 - **GitHub**: [manasir747](https://github.com)
 - **LeetCode**: [LeetCode Profile](https://leetcode.com)
+
+## Built With
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- ShadCN UI
