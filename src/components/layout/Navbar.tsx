@@ -7,6 +7,7 @@ import { PageContainer } from "./PageContainer";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -100,26 +101,33 @@ export function Navbar() {
         </div>
       </PageContainer>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-background border-b shadow-lg py-4 px-4 flex flex-col gap-2 transition-all">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={cn(
-                "px-4 py-3 rounded-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring text-sm font-medium",
-                activeSection === link.href.substring(1)
-                  ? "bg-secondary text-secondary-foreground"
-                  : "text-foreground/70 hover:text-foreground hover:bg-secondary/50"
-              )}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden absolute top-16 left-0 w-full bg-background border-b shadow-lg py-4 px-4 flex flex-col gap-2"
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "px-4 py-3 rounded-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring text-sm font-medium",
+                  activeSection === link.href.substring(1)
+                    ? "bg-secondary text-secondary-foreground"
+                    : "text-foreground/70 hover:text-foreground hover:bg-secondary/50"
+                )}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
