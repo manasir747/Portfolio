@@ -16,16 +16,16 @@ export function Footer() {
           </div>
           
           <div className="flex items-center gap-4 text-sm font-medium text-muted-foreground">
-            <Link href="https://github.com" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
+            <Link href="https://github.com/manasir747" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
               GitHub
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
+            <Link href="https://www.linkedin.com/in/mohammed-nasir-9a847a284/" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
               LinkedIn
             </Link>
-            <Link href="https://leetcode.com" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
+            <Link href="https://leetcode.com/u/ma_nasir747/" target="_blank" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
               LeetCode
             </Link>
-            <Link href="mailto:example@email.com" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
+            <Link href="mailto:ma.nasir747@gmail.com" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
               Email
             </Link>
           </div>

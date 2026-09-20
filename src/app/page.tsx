@@ -74,16 +74,16 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center md:justify-start gap-5 pt-4">
-            <Link href="https://github.com" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="GitHub">
+            <Link href="https://github.com/manasir747" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="GitHub">
               <GithubIcon className="w-7 h-7" />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/mohammed-nasir-9a847a284/" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
               <LinkedinIcon className="w-7 h-7" />
             </Link>
-            <Link href="https://leetcode.com" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="LeetCode">
+            <Link href="https://leetcode.com/u/ma_nasir747/" target="_blank" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="LeetCode">
               <LeetCodeIcon className="w-7 h-7" />
             </Link>
-            <Link href="mailto:example@email.com" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="Email Me">
+            <Link href="mailto:ma.nasir747@gmail.com" className="text-muted-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full p-1 hover:-translate-y-1 transition-all duration-300" aria-label="Email Me">
               <Mail className="w-7 h-7" />
             </Link>
           </div>
@@ -432,19 +432,19 @@ export default function Home() {
             Feel free to reach out through any of the platforms below!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="mailto:example@email.com" className={cn(buttonVariants({ size: "lg" }), "font-semibold hover:scale-105 transition-transform")}>
+            <Link href="mailto:ma.nasir747@gmail.com" className={cn(buttonVariants({ size: "lg" }), "font-semibold hover:scale-105 transition-transform")}>
               <Mail className="w-5 h-5 mr-2" />
               Send Email
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
+            <Link href="https://www.linkedin.com/in/mohammed-nasir-9a847a284/" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
               <LinkedinIcon className="w-5 h-5 mr-2" />
               LinkedIn
             </Link>
-            <Link href="https://github.com" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
+            <Link href="https://github.com/manasir747" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
               <GithubIcon className="w-5 h-5 mr-2" />
               GitHub
             </Link>
-            <Link href="https://leetcode.com" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
+            <Link href="https://leetcode.com/u/ma_nasir747/" target="_blank" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "font-semibold hover:bg-primary/5 hover:-translate-y-1 transition-all duration-300")}>
               <LeetCodeIcon className="w-5 h-5 mr-2" />
               LeetCode
             </Link>
