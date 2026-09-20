@@ -222,11 +222,11 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <Link href="#" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                  <Link href="https://github.com/manasir747/VoyageAI" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
                     <GithubIcon className="w-4 h-4 mr-2" />
                     GitHub
                   </Link>
-                  <Link href="#" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                  <Link href="https://voyage-ai-web-silk.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
                   </Link>
@@ -255,11 +255,11 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <Link href="#" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                  <Link href="https://github.com/manasir747/JeevanDost-2.0" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
                     <GithubIcon className="w-4 h-4 mr-2" />
                     GitHub
                   </Link>
-                  <Link href="#" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                  <Link href="https://jeevandost-2-0.onrender.com/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
                   </Link>
