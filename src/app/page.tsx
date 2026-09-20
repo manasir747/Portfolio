@@ -267,6 +267,130 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Census Saathi</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">GenAI-powered Census 2027 companion</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Interactive AI-powered civic-tech platform designed to simplify and gamify the Census experience for citizens. Built for the PromptWars Hackathon.</li>
+                  <li>Interactive Census journey with AI-powered assistance using Google Gemini.</li>
+                  <li>State-specific insights and Census safety and privacy information.</li>
+                  <li>Responsive modern UI.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Next.js 16", "React 19", "TypeScript", "CSS Modules", "Framer Motion", "Lucide React", "Google Gemini API"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/CensusSathi" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://census-sathi.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Brainworks</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">Distributed Road-Safety & Hazard Awareness System</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li><strong>Conceptual/Proposed Architecture:</strong> A distributed road-safety system designed for hazard awareness and collision-risk detection in low-visibility mining environments (no physical hardware prototype implemented).</li>
+                  <li>Architecture Flow: GPS + LoRa + mmWave Radar → ESP32 Central Processing → Sensor & Data Fusion → Collision Risk Evaluation → Warning Decision</li>
+                  <li>Uses NEO-6M GPS for vehicle position, LoRa SX1278 for V2V communication, and 24 GHz mmWave radar for local obstacle sensing.</li>
+                  <li><strong>Achievement:</strong> 2nd Place — Smart India Hackathon (SIH) Internal Hackathon 2026 (Team Brainworks, 2nd position out of 27 teams).</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["ESP32", "LoRa SX1278", "NEO-6M GPS", "mmWave Radar", "Sensor Fusion"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/Brainworks" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Krishimitra AI</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">AI-powered agricultural assistant</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>An intelligent agriculture assistant designed to help farmers make better decisions using AI-driven insights.</li>
+                  <li>Understands crop-related queries in local languages and accepts crop images from a phone camera.</li>
+                  <li>Uses AI to analyze text and image inputs to evaluate possible causes and actions.</li>
+                  <li>Suggests practical next steps with farmer-friendly results via a responsive and accessible interface.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Next.js", "React", "AI-powered analysis"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/sahilmane69/Team-Diamonds_agriculture" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://krishi-mitra-ai-two.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Rapid Crisis Response System</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">IoT-ready Agentic AI Emergency Orchestration</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>An IoT-ready emergency response platform for hotels and resorts. Guests can trigger incidents instantly and staff can coordinate responses in real time.</li>
+                  <li>Administrators receive Gemini-powered insights, automated incident summaries, and AI-generated suggestions via the admin command board.</li>
+                  <li>Includes Firebase/Firestore real-time incident feeds and Google Maps responder routing.</li>
+                  <li>IoT-ready architecture for sensors, panic buttons, and wearable telemetry with human-in-the-loop emergency guidance.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Next.js 14", "TypeScript", "Firebase Auth", "Firestore", "Cloud Functions", "Google Gemini", "Google Maps API"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/shabi-2-2/SolutionsChallenge_RapidAssistanceSystem" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                </div>
+              </div>
+            </div>
+
           </div>
         </FadeIn>
       </section>
