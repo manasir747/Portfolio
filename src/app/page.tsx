@@ -1,6 +1,6 @@
 import { PageContainer } from "@/components/layout/PageContainer";
 import { buttonVariants } from "@/components/ui/button";
-import { Mail, MapPin, FileText, ArrowRight, Code, Terminal, Server, Database, Trophy, Award, BookOpen, ExternalLink } from "lucide-react";
+import { Mail, MapPin, FileText, ArrowRight, Code2, Monitor, Server, Database, Trophy, Wrench, Bot, BookOpen, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -62,14 +62,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
-            <Link href="#projects" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto font-semibold hover:scale-105 transition-transform")}>
+          <div className="flex items-center justify-center md:justify-start pt-2">
+            <Link href="#projects" className={cn(buttonVariants({ size: "lg" }), "font-semibold hover:scale-105 transition-transform")}>
               View Projects
               <ArrowRight className="w-4 h-4 ml-2" />
-            </Link>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full sm:w-auto font-semibold hover:bg-primary/5 transition-colors")}>
-              <FileText className="w-4 h-4 mr-2" />
-              Download Resume
             </Link>
           </div>
 
@@ -466,72 +462,96 @@ export default function Home() {
       {/* 8. SKILLS SECTION */}
       <section id="skills" className="w-full max-w-5xl py-20 border-t border-border/40 scroll-mt-16">
         <FadeIn>
-          <SectionHeading title="Skills" />
-          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-10">
-            
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Code className="w-5 h-5 text-primary"/> Languages</h4>
-              <div className="flex flex-wrap gap-2.5">
+          <div className="mb-10">
+            <SectionHeading title="Skills" />
+            <p className="text-muted-foreground mt-1">Technologies and concepts I work with</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Code2 className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Languages & Web</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["Python", "JavaScript", "TypeScript", "HTML", "CSS"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Code className="w-5 h-5 text-primary"/> Frontend</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Monitor className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Frontend</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["React", "Next.js", "Tailwind CSS"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Server className="w-5 h-5 text-primary"/> Backend</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Server className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Backend & APIs</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["FastAPI", "Flask", "REST APIs"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Database className="w-5 h-5 text-primary"/> Databases</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Database className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Databases & Backend Services</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["MongoDB", "Supabase"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Terminal className="w-5 h-5 text-primary"/> Developer Tools</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Wrench className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Developer Tools</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["Git", "GitHub", "VS Code", "Cursor AI", "Docker", "Postman"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><Award className="w-5 h-5 text-primary"/> AI & Automation</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <Bot className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">AI & Automation</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["AI Agents", "Prompt Engineering", "LLM Applications", "n8n", "Workflow Automation"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
 
-            <div className="sm:col-span-2 space-y-4">
-              <h4 className="flex items-center gap-2 font-bold text-lg text-foreground"><BookOpen className="w-5 h-5 text-primary"/> Core CS</h4>
-              <div className="flex flex-wrap gap-2.5">
+            <div className="sm:col-span-2 rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="flex items-center gap-2.5 mb-4">
+                <BookOpen className="w-5 h-5 text-primary" />
+                <h4 className="font-bold text-foreground">Computer Science</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 {["Data Structures", "Algorithms", "OOP", "API Integration", "Responsive Design"].map(s => (
-                  <span key={s} className="px-3.5 py-1.5 bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground text-sm font-medium rounded-md cursor-default">{s}</span>
+                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
                 ))}
               </div>
             </div>
-            
+
           </div>
         </FadeIn>
       </section>
