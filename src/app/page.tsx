@@ -399,7 +399,7 @@ export default function Home() {
       <section id="achievements" className="w-full max-w-5xl py-20 border-t border-border/40 scroll-mt-16">
         <FadeIn>
           <SectionHeading title="Achievements" />
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="flex items-start gap-4 p-5 rounded-2xl border bg-card hover:border-yellow-500/50 hover:shadow-sm transition-all shadow-sm">
               <div className="bg-yellow-500/10 p-3 rounded-full shrink-0">
                 <Trophy className="w-6 h-6 text-yellow-500" />
@@ -407,16 +407,7 @@ export default function Home() {
               <div>
                 <h4 className="font-bold text-foreground">Winner — Hackathon 1.0</h4>
                 <p className="text-muted-foreground text-sm mt-1">Project: JeevanDost</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start gap-4 p-5 rounded-2xl border bg-card hover:border-primary/50 hover:shadow-sm transition-all shadow-sm">
-              <div className="bg-primary/10 p-3 rounded-full shrink-0">
-                <Award className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-bold text-foreground">First Position</h4>
-                <p className="text-muted-foreground text-sm mt-1">Across all partner institute campuses — B.Tech First Year</p>
+                <p className="text-muted-foreground text-sm mt-1">1st Position across all partner institute campuses — B.Tech First Year</p>
               </div>
             </div>
 
@@ -430,16 +421,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 p-5 rounded-2xl border bg-card hover:border-primary/50 hover:shadow-sm transition-all shadow-sm md:col-span-2 lg:col-span-1">
-              <div className="bg-primary/10 p-3 rounded-full shrink-0">
-                <Award className="w-6 h-6 text-primary" />
+            <div className="flex items-start gap-4 p-5 rounded-2xl border bg-card hover:border-yellow-500/50 hover:shadow-sm transition-all shadow-sm">
+              <div className="bg-yellow-500/10 p-3 rounded-full shrink-0">
+                <Trophy className="w-6 h-6 text-yellow-500" />
               </div>
               <div>
                 <h4 className="font-bold text-foreground">2nd Place — SIH Internal Hackathon 2026</h4>
-                <p className="text-muted-foreground text-sm mt-1 mb-3">Team Brainworks — secured 2nd position out of 27 teams</p>
-                <div className="text-xs text-muted-foreground/90 bg-secondary/50 p-3 rounded-lg border border-border/50">
-                  <span className="font-semibold text-foreground">Problem Statement SIH26007:</span> Ministry of Steel: Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.
-                </div>
+                <p className="text-muted-foreground text-sm mt-1">Team Brainworks</p>
+                <p className="text-muted-foreground text-sm mt-1">2nd position out of 27 teams</p>
               </div>
             </div>
           </div>
