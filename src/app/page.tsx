@@ -281,6 +281,70 @@ export default function Home() {
 
             <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
               <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">BridgeAI</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">AI-Powered Crisis Intelligence & Response Support Platform</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Engineered an AI-powered crisis intelligence platform using Google Gemini to transform unstructured emergency reports into structured intelligence via automated analysis, urgency classification, and severity scoring.</li>
+                  <li>Implemented intelligent information extraction, claim verification support, and critical gap detection to identify affected populations, locations, vulnerable groups, and urgent resource requirements.</li>
+                  <li>Developed a human-supervised crisis response dashboard featuring prioritized operational recommendations, evidence-backed insights, uncertainty indicators, multilingual support (English, Hindi, Marathi), and analysis history.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Next.js 15", "TypeScript", "React", "Google Gemini API", "Zod", "Tailwind CSS"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/BridgeAI" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://bridge-ai-tan.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">CaseConnect</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">Integrated Complaint Management & Inter-Bureau Coordination Platform</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Engineered a centralized complaint management ecosystem for AICTE, connecting the Public Grievance Redressal Cell (PGRC), Regulation Bureau, and approved institutions through unified case lifecycle management.</li>
+                  <li>Implemented intelligent complaint overlap detection using similarity confidence scoring and explainable matching to identify duplicate or related grievances for cross-bureau coordination.</li>
+                  <li>Developed role-specific dashboards with automated 45-day statutory SLA tracking, escalation alerts, regulatory notice management, and interactive analytics using Next.js and Supabase PostgreSQL with RLS.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Next.js 16", "React 19", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/shabi-2-2/CaseConnect" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://case-connect-eight.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
                 <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">JeevanDost</h3>
                 <p className="text-sm font-semibold text-primary/80 mb-4">AI Healthcare Assistant — Winner, Hackathon 1.0</p>
                 
@@ -314,18 +378,17 @@ export default function Home() {
 
             <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
               <div className="p-6 md:p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Census Saathi</h3>
-                <p className="text-sm font-semibold text-primary/80 mb-4">GenAI-powered Census 2027 companion</p>
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">CensusSathi</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">AI-Powered Civic Awareness & Census Assistance Platform</p>
                 
                 <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
-                  <li>Interactive AI-powered civic-tech platform designed to simplify and gamify the Census experience for citizens. Built for the PromptWars Hackathon.</li>
-                  <li>Interactive Census journey with AI-powered assistance using Google Gemini.</li>
-                  <li>State-specific insights and Census safety and privacy information.</li>
-                  <li>Responsive modern UI.</li>
+                  <li>Developed an AI-powered Census assistant using Google Gemini to deliver contextual responses and simplify census-related information, particularly for rural communities.</li>
+                  <li>Implemented interactive educational journeys, step-by-step census guidance, and state-specific insights covering House Listing, Population Enumeration, data collection, and citizen privacy.</li>
+                  <li>Built a responsive, multilingual interface using Next.js 16, TypeScript, and Framer Motion, incorporating reusable React 19 components, Context API, custom hooks, and modular AI service integration.</li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
-                  {["Next.js 16", "React 19", "TypeScript", "CSS Modules", "Framer Motion", "Lucide React", "Google Gemini API"].map(tech => (
+                  {["Next.js 16", "React 19", "TypeScript", "Google Gemini API", "Framer Motion", "Tailwind CSS"].map(tech => (
                     <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
                       {tech}
                     </span>
@@ -340,6 +403,98 @@ export default function Home() {
                   <Link href="https://census-sathi.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">QuickShare</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">Lightweight Full-Stack Temporary File-Sharing Platform</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Built a lightweight, account-free file-sharing platform enabling instant file transfers (up to 25 MB) with unique download links and dynamic QR codes with PNG export.</li>
+                  <li>Implemented real-time upload progress tracking with cancellation support using XMLHttpRequest, sanitized server-side disk storage, and direct downloads preserving MIME types.</li>
+                  <li>Engineered an automated 24-hour file expiration lifecycle with live recipient countdown timers and a scheduled background cleanup service to purge expired and orphaned files.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["React 19", "Vite 8", "JavaScript", "Node.js", "Express 5", "Multer", "REST APIs"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/QuickShare" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://quick-share-dusky.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">StudyMate AI</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">AI-Powered Interactive Learning Platform</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Engineered an AI-powered study companion using Google Gemini to transform notes, lecture transcripts, and textbook content into structured summaries, key takeaways, and concept explanations.</li>
+                  <li>Implemented automated MCQ generation, difficulty-based assessments, and interactive 3D flashcards with self-assessment and spaced-repetition functionality.</li>
+                  <li>Developed a responsive, dependency-free frontend with persistent study history, learning analytics, and topic-wise performance tracking using Vanilla JavaScript, LocalStorage, and interactive SVG visualizations.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["HTML5", "CSS3", "JavaScript", "Google Gemini API", "LocalStorage"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/StudyMateAI" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                  <Link href="https://studymateai-ten.vercel.app/" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default", size: "sm" }), "w-full hover:scale-[1.02] transition-transform")}>
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border bg-card text-card-foreground shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+              <div className="p-6 md:p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">RAG Agent</h3>
+                <p className="text-sm font-semibold text-primary/80 mb-4">End-to-End Retrieval-Augmented Generation System</p>
+                
+                <ul className="list-disc list-outside ml-4 text-sm text-muted-foreground space-y-2 mb-6 flex-1">
+                  <li>Engineered an end-to-end RAG pipeline supporting multi-source knowledge ingestion from local documents, TXT/Markdown uploads, and live web pages with sliding-window chunking.</li>
+                  <li>Implemented semantic search and Top-K retrieval using Sentence Transformers (all-MiniLM-L6-v2) and ChromaDB for vector storage, embedding generation, and similarity matching.</li>
+                  <li>Integrated Google Gemini 2.5 Flash for context-grounded response generation with source attribution, retrieved snippets, and cosine similarity scores via an interactive Streamlit UI and CLI.</li>
+                </ul>
+
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4 border-t border-border/40">
+                  {["Python", "Google Gemini 2.5 Flash", "ChromaDB", "Sentence Transformers", "Streamlit"].map(tech => (
+                    <span key={tech} className="text-xs font-medium bg-secondary hover:bg-primary/20 hover:text-primary transition-colors text-secondary-foreground px-2.5 py-1 rounded-md cursor-default">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <Link href="https://github.com/manasir747/RAG-AGENT" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full hover:bg-primary/5 transition-colors")}>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
                   </Link>
                 </div>
               </div>
