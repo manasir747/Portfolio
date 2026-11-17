@@ -1,6 +1,6 @@
 import { PageContainer } from "@/components/layout/PageContainer";
 import { buttonVariants } from "@/components/ui/button";
-import { Mail, MapPin, FileText, ArrowRight, Code2, Monitor, Server, Database, Trophy, Wrench, Bot, BookOpen, ExternalLink } from "lucide-react";
+import { Mail, MapPin, ArrowRight, Code2, Monitor, Database, Trophy, Wrench, Bot, BookOpen, ExternalLink, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -41,6 +41,55 @@ function SectionHeading({ title }: { title: string }) {
     </h2>
   );
 }
+
+const skillCategories = [
+  {
+    title: "Languages",
+    icon: Code2,
+    skills: ["Python", "JavaScript", "Java (OOPs)", "C++", "C"],
+  },
+  {
+    title: "Frontend",
+    icon: Monitor,
+    skills: ["HTML", "CSS", "React", "Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Backend & Databases",
+    icon: Database,
+    skills: ["REST APIs", "Node.js", "Flask", "MongoDB", "Supabase (PostgreSQL)", "MySQL"],
+  },
+  {
+    title: "Developer Tools",
+    icon: Wrench,
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Cursor AI",
+      "Postman",
+      "IntelliJ Idea",
+      "Google Antigravity",
+      "Arduino IDE",
+      "Cisco Packet Tracer",
+    ],
+  },
+  {
+    title: "AI & Automation",
+    icon: Bot,
+    skills: ["AI Agents", "Prompt Engineering", "LLM Applications", "n8n", "Workflow Automation"],
+  },
+  {
+    title: "Core CS",
+    icon: GraduationCap,
+    skills: [
+      "Programming",
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming (Java)",
+      "Database Management Systems (DBMS)",
+      "Software Engineering",
+    ],
+  },
+];
 
 export default function Home() {
   return (
@@ -464,94 +513,55 @@ export default function Home() {
         <FadeIn>
           <div className="mb-10">
             <SectionHeading title="Skills" />
-            <p className="text-muted-foreground mt-1">Technologies and concepts I work with</p>
+            <p className="text-muted-foreground mt-1 text-base md:text-lg">
+              Technologies, tools, and computer science fundamentals I work with
+            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+            {skillCategories.map((category) => {
+              const Icon = category.icon;
+              return (
+                <div
+                  key={category.title}
+                  className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border/70 bg-card p-6 shadow-xs hover:border-primary/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  {/* Top glowing gradient border on hover */}
+                  <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  {/* Ambient background glow */}
+                  <div className="absolute -right-8 -top-8 w-28 h-28 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors pointer-events-none" />
 
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Code2 className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Languages & Web</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["Python", "JavaScript", "TypeScript", "HTML", "CSS"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
+                  <div>
+                    {/* Header: Icon + Title + Count */}
+                    <div className="flex items-center justify-between gap-3 mb-5">
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-primary/10 text-primary border border-primary/20 group-hover:scale-105 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 shrink-0 shadow-2xs">
+                          <Icon className="w-5 h-5" />
+                        </div>
+                        <h3 className="font-bold text-foreground text-lg tracking-tight group-hover:text-primary transition-colors">
+                          {category.title}
+                        </h3>
+                      </div>
+                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-muted text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary transition-colors border border-border/40">
+                        {category.skills.length} {category.title === "Developer Tools" ? "tools" : "skills"}
+                      </span>
+                    </div>
 
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Monitor className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Frontend</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "Tailwind CSS"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Server className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Backend & APIs</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["FastAPI", "Flask", "REST APIs"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Database className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Databases & Backend Services</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["MongoDB", "Supabase"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Wrench className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Developer Tools</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["Git", "GitHub", "VS Code", "Cursor AI", "Docker", "Postman"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Bot className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">AI & Automation</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["AI Agents", "Prompt Engineering", "LLM Applications", "n8n", "Workflow Automation"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            <div className="sm:col-span-2 rounded-2xl border bg-card p-5 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-2.5 mb-4">
-                <BookOpen className="w-5 h-5 text-primary" />
-                <h4 className="font-bold text-foreground">Computer Science</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {["Data Structures", "Algorithms", "OOP", "API Integration", "Responsive Design"].map(s => (
-                  <span key={s} className="px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary border border-border/50 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-                ))}
-              </div>
-            </div>
-
+                    {/* Skill Tags */}
+                    <div className="flex flex-wrap gap-2">
+                      {category.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg bg-secondary/70 border border-border/60 text-secondary-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default select-none shadow-2xs"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </FadeIn>
       </section>
