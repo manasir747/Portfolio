@@ -4,7 +4,7 @@ Hi, I am Mohammed Abu Nasir. This is my Portfolio website where you can find my 
 
 Feel free to connect with me!
 
-- **Email**: example@email.com
+- **Email**: ma.nasir747@gmail.com
 - **LinkedIn**: [Mohammed Abu Nasir](https://linkedin.com)
 - **GitHub**: [manasir747](https://github.com)
 - **LeetCode**: [LeetCode Profile](https://leetcode.com)
