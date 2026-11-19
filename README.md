@@ -1,19 +1,23 @@
-# Mohammed Abu Nasir - Personal Portfolio
+# Mohammed Abu Nasir — Personal Portfolio
 
-Hi, I am Mohammed Abu Nasir. This is my Portfolio website where you can find my experience, projects, skills, and certifications.
+Welcome to my personal portfolio! I'm **Mohammed Abu Nasir**, an AI and Full-Stack Developer passionate about building impactful applications and exploring emerging technologies.
 
-Feel free to connect with me!
+This portfolio showcases my **projects, technical skills, experience, and certifications**.
 
-- **Email**: ma.nasir747@gmail.com
-- **LinkedIn**: [Mohammed Abu Nasir](https://linkedin.com)
-- **GitHub**: [manasir747](https://github.com)
-- **LeetCode**: [LeetCode Profile](https://leetcode.com)
+## Tech Stack
 
-## Built With
+- **Framework:** Next.js 15
+- **Frontend:** React, TypeScript
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Animations:** Framer Motion
 
-- Next.js 15
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- ShadCN UI
+## Connect With Me
+
+- **Email:** [ma.nasir747@gmail.com](mailto:ma.nasir747@gmail.com)
+- **LinkedIn:** [Mohammed Abu Nasir](YOUR_LINKEDIN_PROFILE_URL)
+- **GitHub:** [manasir747](https://github.com/manasir747)
+- **LeetCode:** [LeetCode Profile](YOUR_LEETCODE_PROFILE_URL)
+
+---
+
+Thanks for visiting my portfolio!
